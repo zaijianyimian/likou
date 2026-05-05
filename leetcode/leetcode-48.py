@@ -9,9 +9,11 @@ class Solution:
         if not matrix or len(matrix) != len(matrix[0]):
             return
         n = len(matrix)
+        # 先进行对角线反转
         for i in range(n):
             for j in range(n - i):
                 matrix[i][j], matrix[n - j - 1][n - i - 1] = matrix[n - j - 1][n - i - 1], matrix[i][j]
+        # 在进行上下反转
         for i in range(n // 2):
             for j in range(n):
                 matrix[i][j], matrix[n - i - 1][j] = matrix[n - i - 1][j], matrix[i][j]
