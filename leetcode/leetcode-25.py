@@ -6,43 +6,28 @@ class ListNode:
         self.next = next
 class Solution:
     def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
-        dummy = ListNode(0, head)
+        p0 = dummy = ListNode(0,head)
         cur = dummy.next
         n = 0
         while cur:
             n += 1
             cur = cur.next
-        if n < k:
-            return dummy.next
-        pre = dummy
-        start = dummy.next
-        end = self.toend(dummy.next,k)
+        pre,cur = None,dummy.next
         while n >= k:
-            nxt = end.next
-            pre.next = self.reverse(start,end)
-            start.next = nxt
             n -= k
-            if n < k:
-                break
-            pre = start
-            start = nxt
-            end = self.toend(nxt,k)
-
+            for _ in range(k):
+                nxt = cur.next
+                cur.next = pre
+                pre = cur
+                cur = nxt
+            nxt = p0.next
+            nxt.next = cur
+            p0.next = pre
+            p0 = nxt
         return dummy.next
-    def toend(self,node,k):
-        for i in range(k - 1):
-            node = node.next
-        return node
-    def reverse(self,start,end) -> Optional[ListNode]:
-        pre = None
-        cur =  start
-        ended = end.next
-        while cur != end:
-            nxt = cur.next
-            cur.next = pre
-            pre = cur
-            cur = nxt
-        cur.next = pre
-        return end
 
+if __name__ == "__main__":
+    s = Solution()
+    head = ListNode(1,ListNode(2,ListNode(3,ListNode(4,ListNode(5)))))
+    print(s.reverseKGroup(head,2))
 
