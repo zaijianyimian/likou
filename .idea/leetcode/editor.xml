@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditor">
+    <option name="projectConfig">
+      <map>
+        <entry key="$PROJECT_DIR$/pythons/leetcode/leetcode/editor/cn/[10]正则表达式匹配.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/pythons/leetcode/leetcode/editor/cn/doc/content/[10]正则表达式匹配.md" />
+              <option name="frontendQuestionId" value="leetcode.cn10" />
+              <option name="host" value="leetcode.cn" />
+              <option name="langSlug" value="python3" />
+              <option name="path" value="$PROJECT_DIR$/pythons/leetcode/leetcode/editor/cn/[10]正则表达式匹配.py" />
+              <option name="titleSlug" value="regular-expression-matching" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/pythons/leetcode/leetcode/editor/cn/[30]串联所有单词的子串.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/pythons/leetcode/leetcode/editor/cn/doc/content/[30]串联所有单词的子串.md" />
+              <option name="frontendQuestionId" value="leetcode.cn30" />
+              <option name="host" value="leetcode.cn" />
+              <option name="langSlug" value="python3" />
+              <option name="path" value="$PROJECT_DIR$/pythons/leetcode/leetcode/editor/cn/[30]串联所有单词的子串.py" />
+              <option name="titleSlug" value="substring-with-concatenation-of-all-words" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
